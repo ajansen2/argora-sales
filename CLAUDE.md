@@ -15,12 +15,13 @@ real human closer to a signed subscription.
 
 **Primary product: Argora Voice** — AI phone receptionist for local service
 businesses.
-- Price: $500/mo (early adopters currently free; transitioning to paid — see PLAYBOOK.md)
+- Price: $199/mo grandfathered rate (before Aug 1, 2026), $500/mo after
 - Stack is production-ready: 18/18 test scenarios passing, call recordings,
   transcripts, sentiment analysis, voicemail handling, SMS follow-up, weekly
   reports, analytics dashboard.
 - Compliance built in: recording disclosure on every call, "Reply STOP" on SMS.
-- Current pipeline: 29 signups (3 active, 24 dormant trials).
+- Current pipeline: 29 signups (2 activated, 21 dormant trials, 6 test/churned).
+- **Target geography: United States** — all existing signups are US-based. Do NOT target Edmonton/Alberta for leads.
 - Partner model: agencies/resellers pay $200/client/mo, resell at $500–800.
 - Core value pitch: **a missed call is a lost job.** For an HVAC or plumbing
   company, one missed after-hours call = $300–$1,500 of lost work. Argora Voice
