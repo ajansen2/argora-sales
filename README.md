@@ -30,3 +30,18 @@ Files:
   pipeline/            CRM + activity log + learnings (Claude's memory)
   assets/              canonical scripts & one-pagers
   .claude/skills/      the 7 slash commands
+
+--- V2 (July 2026) ---
+Added: /ads skill (live campaign management), assets/offer.md,
+trial-rescue-emails.md (send-ready), testimonial-ask.md, missed-call-audit.md,
+objections.md, landing-page-hvac.md, ads-copy.md, conversion-tracking.md,
+supabase-export.sql. CLAUDE.md + PLAYBOOK.md updated (ads live, offer
+structure, new lead sources, gates).
+
+FIRST 72 HOURS CHECKLIST:
+[ ] Verify Google Ads conversion tag (assets/conversion-tracking.md) — TODAY
+[ ] Run supabase-export.sql, feed CSV to Claude Code -> pipeline populated
+[ ] Send Touch 1 rescue email to all dormant trials (assets/trial-rescue-emails.md)
+[ ] Call the 3 actives (assets/testimonial-ask.md) -> proof + referrals
+[ ] Publish the offer: guarantee + Aug 1 deadline on site
+[ ] /coach roleplay once, then first 5 cold calls with missed-call audit

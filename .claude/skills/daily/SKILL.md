@@ -32,3 +32,7 @@ Perform these steps in order. Be brief and directive — this is a stand-up, not
 
 6. **Close:** update activity-log.md with a dated "briefing delivered" entry and
    list what you're waiting on from Adam (call results, reply outcomes).
+
+7. **Cadence enforcement:** read CADENCE.md. Open the briefing with the gate
+   countdown ("Gate 1 in N days — status: X/24 trials resolved, proof live: y/n").
+   Report weekly quota pace. Flag skipped call blocks (2+ days) in one sentence.

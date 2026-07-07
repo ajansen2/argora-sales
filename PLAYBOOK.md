@@ -56,3 +56,27 @@ HVAC"), with verified conversion tracking, never Meta.
 - Call volume vs. 25/week quota
 - Demos booked, partner meetings held
 - Days since last new customer (the anti-complacency number)
+
+---
+
+## AMENDMENTS (July 2026)
+
+**Google Ads is live — governing gates:**
+- Gate 0 (today): test signup fired, conversion visible in Google Ads. Until
+  then, all ad data is fiction.
+- Gate 1: any budget/geo/keyword expansion requires >=1 tracked conversion.
+- Kill rule: 2 weeks of spend with verified tracking and 0 conversions -> pause
+  without sentiment, back to pure outbound. Max loss ~$300, not another $1,365.
+- Speed-to-lead: every ad lead called within 1 hour. /daily flags violations.
+
+**This week's two force-multipliers (do before more outreach):**
+1. PROOF: testimonial + one number from each of the 3 actives; permissioned
+   recorded demo call on the landing page.
+2. OFFER: publish the 30-day book-a-job-or-don't-pay guarantee + card-on-file
+   trial + Aug 1 grandfathered deadline. Everything downstream converts better
+   once these exist.
+
+**Signature outbound play — the Missed-Call Audit:**
+Test-call the prospect's line (after hours + mid-day, max 2 calls). If unanswered,
+open with the evidence. If answered: "You actually passed the test — most don't"
+and pitch anyway. Log audit results as the hook in pipeline.csv.

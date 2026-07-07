@@ -122,6 +122,36 @@ log it in learnings.md and adjust future copy accordingly.
 - `/partner` — agency/reseller channel outreach
 - `/content` — one LinkedIn post or case-study asset tied to real pipeline events
 - `/coach <prospect>` — pre-call prep, objection roleplay, post-call debrief
-- `/ads review` — weekly Google Ads performance review with pipeline correlation
-- `/ads copy` — RSA headline/description variants per vertical
-- `/ads audit` — settings checklist (conversion tag, networks, geo, negatives)
+
+---
+
+## 7. UPDATES (July 2026 — current state)
+
+- **Google Ads: LIVE.** Alberta, search-only, $20–30/day cap. First job in any
+  /ads session: confirm conversion tracking is verified. Expansion (geo, budget,
+  keywords) is GATED on the first tracked conversion. Meta stays dead — do not revive.
+- **The offer (use in all pitches and copy):**
+  - 30-day guarantee: "If it doesn't book at least one job in your first 30
+    days, you don't pay."
+  - Trial requires card on file (Stripe trial-with-card).
+  - Grandfathered rate $199/mo locked 12 months for anyone live before Aug 1;
+    $500/mo after. Deadlines are real — never extend silently, never fake urgency.
+  - Annual option: 2 months free on prepay.
+- **New lead sources (in /leads priority):**
+  1. Competitor switchers — businesses leaving human answering services
+     (Ruby, AnswerConnect, Smith.ai, local Edmonton services). Find via their
+     2–3 star reviews. Already have budget; easiest sale we have.
+  2. Missed-call-audit verified leads — Adam test-calls the business line
+     (once after hours, once mid-day, max 2 calls, identify himself if answered).
+     A verified unanswered call is the strongest hook that exists.
+  3. Review-based hooks (original method).
+- **Proof-first rule:** until testimonials + a permission-based recorded demo
+  call are live on the site, flag it in every /daily as an open blocker.
+- **Coaching cadence:** /coach roleplay is part of the morning ritual before
+  the call block. Adam records his own calls (Alberta = one-party consent,
+  his own calls only); paste transcripts for scoring on talk ratio (target
+  30/70 him/them), discovery-question quality, and whether he asked for a
+  dated close.
+- **CADENCE.md governs the 90 days (July 6 – Oct 4).** /daily enforces it:
+  gate countdowns, quota pace, the Laws. Law violations require explicit
+  override from Adam, logged in activity-log.md.
