@@ -122,3 +122,6 @@ log it in learnings.md and adjust future copy accordingly.
 - `/partner` — agency/reseller channel outreach
 - `/content` — one LinkedIn post or case-study asset tied to real pipeline events
 - `/coach <prospect>` — pre-call prep, objection roleplay, post-call debrief
+- `/ads review` — weekly Google Ads performance review with pipeline correlation
+- `/ads copy` — RSA headline/description variants per vertical
+- `/ads audit` — settings checklist (conversion tag, networks, geo, negatives)
