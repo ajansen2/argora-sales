@@ -1,42 +1,59 @@
 ---
 name: trial-rescue
-description: Convert the dormant Argora Voice trial signups into activated users and paying customers. The warmest pipeline we have - these people already signed up. Run when Adam exports the trial list or reports trial outcomes.
+description: Convert the dormant Argora Voice trial signups into activated users and paying customers. The warmest pipeline we have — these people already signed up. Activation happens on the call, not after it.
 ---
 
 # Trial Rescue
 
-These 24 people raised their hand and then went silent. That is almost always an
+These people raised their hand and then went silent. That is almost always an
 **activation failure** (setup felt hard, or life happened), not a rejection.
-Treat them as the highest-value segment in the pipeline.
+They are the highest-value segment in the pipeline — higher than any cold lead.
 
-## Sequence per trial user (draft all touches, Adam sends)
+## The Script
 
-**Touch 1 — founder email (personal, not automated-looking):**
-Under 80 words. Pattern:
-"Hi [name] — Adam here, I built Argora Voice. Saw you signed up but never got
-your number connected. Totally normal, the setup is the annoying part — can I
-just do it for you on a 10-minute call this week? You'll have it answering your
-phone before we hang up. [2 time options]"
-No marketing language. No feature list. One CTA: the setup call.
+**Read `assets/rescue-call.md` before every rescue session.** It contains the
+complete call script, objection responses, voicemail, and SMS templates. The
+core insight: activation happens LIVE on the call. You walk them through
+forwarding, then call their number while they listen. Nobody stays dormant
+after hearing the AI answer their own business.
 
-**Touch 2 (day 3) — SMS if number on file:** under 30 words, same offer.
+## When /trial-rescue runs
 
-**Touch 3 (day 7) — the deadline email:**
-Announce the end of EARLY_ADOPTER_MODE honestly: free period ends [date];
-anyone activated before then keeps a grandfathered rate ($199/mo suggested —
-confirm with Adam) locked for 12 months. Deadline must be real. Never fake urgency.
+1. Read `assets/rescue-call.md` (the master script)
+2. Read `pipeline/pipeline.csv` — filter for segment=TRIAL, status=DORMANT
+3. Sort by fit_score descending, then by created_at ascending (oldest first)
+4. For each dormant trial, produce:
+   - Their name, business, phone, email, signup date, call count
+   - The personalized opener (fill in their name and business type)
+   - The carrier-specific forwarding code (ask Adam which carrier if unknown)
+   - The specific value math for their vertical (HVAC job = $300-1500, dental patient = $200-500)
 
-**Touch 4 (day 14) — breakup email:** "Closing your account on [date] unless
-I hear from you — one click to keep it." Breakup emails get the most replies;
-keep it warm, not passive-aggressive.
+## Call outcomes (log in pipeline.csv immediately)
 
-## On the setup call (prep sheet for Adam)
-- Goal: number forwarded and AI answering LIVE before hanging up.
-- Ask: "What made you sign up in the first place?" — log the answer verbatim
-  in learnings.md; these answers are our best marketing copy.
-- End with: "It's live. When it books its first job, I'll text you."
+| Status | Meaning | Next action |
+|--------|---------|-------------|
+| `activated` | Forwarding ON, heard live call | Watch for first booking, queue testimonial ask |
+| `scheduled` | Locked a specific setup time | Calendar invite + SMS reminder same minute |
+| `soft-no` | Not now, didn't cancel | SMS on July 29: "48hrs left on $199 lock" |
+| `dead` | Cancelled or wrong fit | Mark closed, log reason verbatim in learnings.md |
+| `no-contact` | No answer after 3 attempts | Move to soft-no track |
+
+## Cadence
+
+- Dormants go TOP of every 7:30-9:00 call block until the list is empty
+- Cold leads wait — these people already want it, they just stalled
+- No answer → voicemail + same-day SMS (from rescue-call.md)
+- Second attempt next business day at a different hour
+- Three no-contacts → soft-no track
+
+## The close (from rescue-call.md)
+
+$199/mo locked 12 months for anyone live before Aug 1. 30-day guarantee: no
+booked appointments = no charge. The product is already working when you ask —
+they're not buying a promise, they're keeping something they can hear.
 
 ## Tracking
-Every trial user gets a row in pipeline.csv (segment=TRIAL). After each of
-Adam's reports, update status and log objections in learnings.md. Weekly,
-report: contacted / replied / activated / converted, and the top objection.
+
+Every outcome gets logged in pipeline.csv AND learnings.md. Weekly report:
+contacted / replied / activated / converted, and the top objection heard.
+The "why did you sign up?" answer from every call is marketing gold — log it.

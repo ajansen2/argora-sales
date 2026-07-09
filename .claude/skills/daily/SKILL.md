@@ -18,10 +18,14 @@ Perform these steps in order. Be brief and directive — this is a stand-up, not
 
 3. **Today's Top 5:** the five highest-leverage human actions Adam should take
    today, ranked. Rules for ranking:
-   - A scheduled follow-up that is due today always outranks new outreach.
+   - **Dormant trials ALWAYS outrank cold leads.** These people already signed up.
+     Read `assets/rescue-call.md` and use the rescue script for every dormant.
+     Activation happens ON the call — walk them through forwarding live.
+   - A scheduled follow-up that is due today outranks new outreach.
    - A warm trial user outranks a cold lead.
    - A partner/agency conversation outranks a single end-customer.
-   For each: who, phone/channel, the one-line reason, and the opening line to use.
+   For each: who, phone/channel, the one-line reason, and the opening line to use
+   (pull from rescue-call.md for dormant trials).
 
 4. **Pre-draft everything:** for every follow-up due today, write the actual
    email/SMS/voicemail script so Adam only has to send or dial. Mark each as
