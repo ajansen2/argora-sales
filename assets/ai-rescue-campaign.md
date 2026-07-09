@@ -68,6 +68,15 @@ FACTS YOU MAY STATE (answer ONLY from these)
 
 ## Call flow + plumbing
 
+0. **Voicemail detection (build FIRST — most first attempts hit VM):**
+   - Twilio outbound with `machineDetection: 'DetectMessageEnd'`, `asyncAmd: true`, AMD status webhook set.
+   - `AnsweredBy = human` → connect Realtime session, run the script.
+   - `AnsweredBy = machine_end_beep` → play PRE-RENDERED ElevenLabs audio of the VOICEMAIL SCRIPT (render once, store the file — perfect delivery, no latency risk), then hang up + fire same-day SMS.
+   - `machine_end_silence` / `machine_end_other` → play the same file after 1s pause (beep timing unknown; better slightly clipped than absent).
+   - `unknown` → let the agent proceed; the prompt-level backup below covers it.
+   - asyncAmd means humans hear the agent immediately; if a machine verdict arrives mid-greeting, cancel the session and switch to VM playback.
+   - Prompt backup (add to agent system prompt): "If the 'caller' delivers an uninterrupted greeting monologue — 'you've reached…', 'leave a message', 'after the tone' — followed by a beep: this is a voicemail. Do not converse with it. Wait for the beep, deliver the VOICEMAIL SCRIPT once, then end_call."
+   - Log disposition `voicemail` with which layer caught it (amd / prompt) — if prompt catches many, AMD config needs tuning.
 1. Pull dormants from pipeline.csv → enrich each with Supabase context (business name, signup date, trial status) → inject into FACTS per call.
 2. Dial via existing Twilio outbound. Record all calls (check your states' consent rules; announce "this call is recorded" in-flow where required — several US states need all-party consent).
 3. Live transfer target: [FOUNDER PHONE]. If founder doesn't pick up in 15s, agent recovers: "He's mid-call — I'll book you instead," goes to Goal 2.
