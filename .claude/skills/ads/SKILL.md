@@ -30,14 +30,21 @@ Adam pastes campaign stats (or the Google Ads report export). Produce:
 4. Log the week's numbers in pipeline/activity-log.md so trends are visible.
 
 ## Mode 2: `/ads copy` — ad variants
-Write RSA headlines/descriptions per vertical. Rules:
-- Headlines lead with the pain or the outcome: "Missed Calls = Missed Jobs",
-  "Your Phone Answered 24/7", "Never Miss an After-Hours Call".
-- Never lead with "AI" in headlines; it can appear in descriptions.
-- Include one headline with the demo-line hook ("Call It Yourself First").
-- Localize where allowed: "Edmonton", "Alberta".
-- Each variant maps to a landing page section that actually exists — check
-  with Adam before referencing pages that don't.
+Write RSA headlines/descriptions using the NEW positioning (Jul 22 pivot).
+Three pillars — every ad must hit at least one:
+1. Revenue visibility: "See What Your Phone Earns You Every Monday"
+2. Demo-first: "Call It Right Now — Try to Stump Our AI"
+3. Founder service: "The Founder Sets It Up For You in 10 Min"
+
+Rules:
+- Headlines lead with REVENUE or PROOF, never generic "AI receptionist"
+- Anchor price against job value: "$199/mo — One Saved Job Pays For It"
+- Demo line CTA in at least one headline: "Call (240) 775-1375 Right Now"
+- Target solo trades: "HVAC Owners", "Plumbers", "One-Man Shops"
+- NEVER position against competitors by name
+- NEVER claim "sounds human" — let the demo prove it
+- Kill the phrase-match "AI answering service" — eating budget for zero
+- Focus: "AI phone answering" exact-match cluster + trades-specific terms
 
 ## Mode 3: `/ads audit` — settings checklist
 Walk Adam through verifying: conversion tag firing (test signup), networks
