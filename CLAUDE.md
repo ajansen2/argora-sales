@@ -23,15 +23,21 @@ businesses.
 - Current pipeline: 29 signups (2 activated, 21 dormant trials, 6 test/churned).
 - **Target geography: United States** — all existing signups are US-based. Do NOT target Edmonton/Alberta for leads.
 - Partner model: agencies/resellers pay $200/client/mo, resell at $500–800.
-- Core value pitch: **a missed call is a lost job.** For an HVAC or plumbing
-  company, one missed after-hours call = $300–$1,500 of lost work. Argora Voice
-  answers 24/7, books the job, texts the caller. It pays for itself with 1–2
-  saved calls per month.
+- **POSITIONING (July 22, 2026 — data-driven pivot):**
+  "The AI receptionist that shows you the money" — for solo trades/service operators.
+  Three pillars:
+  1. **Revenue visibility** — Monday ROI report is the HERO feature. Price anchored against dollars captured ($199 vs $4,100/week captured), never against competitor subscriptions ($25 Upfirst etc).
+  2. **Founder-service** — Adam personally sets up every account in 10 min and answers support texts. Lead with this. Competitors at $25/mo structurally can't match it.
+  3. **Demo-first proof** — NEVER claim "sounds human." ALWAYS say "call it and try to stump it: (240) 775-1375."
+- Core pitch: "The $25 guys answer your phone; I show you the money. Every Monday you get a report: calls caught, jobs booked, dollars captured. And you don't set anything up — I'm the founder, I do it with you in 10 minutes."
+- **Objection: "Why not the $25 one?"** → "They answer calls. I show you the money — every Monday: calls caught, jobs booked, dollars captured. One saved $250 job pays for 6 weeks. And I personally set it up with you in 10 minutes and text you back same-day. Try getting that at $25."
+- Market reality: Upfirst ($25), Rosie ($49), AskBenny ($99), Smith.ai, Goodcall, RingCentral all compete. We lose generic comparisons. We win on ROI visibility + founder high-touch + trades depth.
 
-**Focus verticals (only these two unless Adam says otherwise):**
-1. HVAC & plumbing companies
-2. Dental & medical clinics
-Do not write generic "for all businesses" copy. Ever.
+**Focus vertical: solo trades and service operators.**
+- HVAC, plumbing, electrical, general contractors — owners who ARE the business
+- Solo dental/medical practices as secondary
+- Do not write generic "for all businesses" copy. Ever.
+- Depth in trades > breadth across 16 verticals.
 
 **Secondary (background) revenue: Shopify apps** — AdWyse ($99/mo),
 ProfitPulse ($29.99/mo), SyncFlow ($29/mo), Bundli ($19.99/mo), Metly ($9.99/mo).
